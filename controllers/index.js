@@ -1,3 +1,4 @@
 module.exports = {
-    UserController: require('./paciente.controller'),
+    PacienteController: require('./paciente.controller'),
+    MedicoController: require('./medico.controller'),
 }
