@@ -4,4 +4,5 @@ module.exports = {
     CONFIG_JOI,
     pacienteSchema: require('./paciente.schema'),
     medicoSchema: require('./medico.schema'),
+    medicamentoSchema: require('./medicamento.schema'),
 }

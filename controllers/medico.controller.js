@@ -1,5 +1,5 @@
 const { MedicoService } = require("../services");
-const { pacienteDto } = require("../dto");
+const { medicoDto } = require("../dto");
 
 exports.getAll = async (req, res, next) => {
     const pacientes = await MedicoService.findAll();
@@ -14,7 +14,7 @@ exports.findOne = async (req, res, next) => {
 
 exports.create = async (req, res, next) => {
     try{
-        const data = pacienteDto.create(req.body);
+        const data = medicoDto.create(req.body);
         const paciente = await MedicoService.create(data);
         res.status(201).json(paciente);
     }catch(e){
