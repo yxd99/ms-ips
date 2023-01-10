@@ -1,5 +1,5 @@
 module.exports = {
     pacienteDto: require('./paciente.dto'),
     medicoDto: require('./medico.dto'),
-    medicamentoDto: require('./medicamento.dto'),
+    consultaDto: require('./consulta.dto'),
 }
