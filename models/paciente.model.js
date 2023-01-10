@@ -1,8 +1,10 @@
 'use stric';
 
+const db = require(".");
+
 exports.PACIENTES_TABLE = 'Pacientes';
 
-module.exports = async (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const Paciente = sequelize.define(
         exports.PACIENTES_TABLE,
         {
@@ -22,6 +24,5 @@ module.exports = async (sequelize, DataTypes) => {
             },
         }
     )
-    await Paciente.sync()
     return Paciente;
 }
